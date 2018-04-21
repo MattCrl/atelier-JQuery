@@ -1,15 +1,15 @@
 $(document).ready(function(){
-
+    let list = $("#todolist");
     $("#add").on('click', addTask);
-    $("#todolist").on('change', '.selectComplete', completedTask);
-    $("#todolist").on('click', '.deleteTask', deleteTask);
+    list.on('change', '.selectComplete', completedTask);
+    list.on('click', '.deleteTask', deleteTask);
 
 
     function addTask()
     {
         let input = $("#todo");
         let newListItem = input.val();
-        $("#todolist").append("<li><input class='selectComplete taskDone' type='checkbox'> - " + newListItem + " - <span class='glyphicon glyphicon-trash deleteTask'></span> </li>");
+        $("#todolist").append("<li> " + newListItem + " - <input class='selectComplete taskDone' type='checkbox'> <span class='glyphicon glyphicon-trash deleteTask'></span> </li>");
         input.val("");
     }
 

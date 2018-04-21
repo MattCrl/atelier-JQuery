@@ -1,4 +1,18 @@
 .taskDone {
     text-decoration: line-through;
-    opacity: 0.7;
+    opacity: 0.4;
+    color: red;
+}
+
+.deleteTask {
+    cursor: pointer;
+    color: red;
+}
+
+.taskDone {
+    cursor: pointer;
+}
+
+#todolist {
+    font-size: 18px;
 }

@@ -9,7 +9,7 @@ $(document).ready(function(){
     {
         let input = $("#todo");
         let newListItem = input.val();
-        $("#todolist").append("<li> " + newListItem + " - <input class='selectComplete taskDone' type='checkbox'> <span class='glyphicon glyphicon-trash deleteTask'></span> </li>");
+        list.append("<li> " + newListItem + " - <input class='selectComplete taskDone' type='checkbox'> <span class='glyphicon glyphicon-trash deleteTask'></span> </li>");
         input.val("");
     }
 

@@ -1,0 +1,4 @@
+.taskDone {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
